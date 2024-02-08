@@ -47,7 +47,8 @@ class Home extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: Row(children: [
+            child: Row(
+              children: [
               Expanded(
                 child: Container(
                   margin: EdgeInsets.only(
@@ -58,7 +59,8 @@ class Home extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 20,vertical: 5),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    boxShadow: const [BoxShadow(
+                    boxShadow: const [
+                      BoxShadow(
                       color: Colors.grey,
                       offset: Offset(0.0, 0.0),
                       blurRadius: 10.0,
@@ -77,16 +79,19 @@ class Home extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(
                   bottom: 20,
-                  right: 20,
+                  right: 10,
                 ),
                 child: ElevatedButton(
-                  child: Text('+', style: TextStyle(fontSize: 35,), ),
+                  child: Text('+', style: TextStyle(fontSize: 40,), ),
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: tdBlue,
                     foregroundColor: Colors.white,
                     minimumSize: Size(60, 60),
                     elevation: 10,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)
+                    )
                   ),
                 ),
               ),
